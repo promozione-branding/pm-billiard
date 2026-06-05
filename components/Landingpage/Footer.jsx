@@ -221,12 +221,14 @@ style={{
 
             <p>
               Website Designed By{" "}
-              <a
-                className="underline text-[#EDBC41]"
-                href="https://promozionebranding.com/"
-              >
-                Promozione Branding Pvt. Ltd.
-              </a>
+                Inquiry Bazaar Pvt. Ltd.  {" "}
+        <a
+          target="_blank"
+          href="https://inquirybazaar.com/"
+          className="text-[#FAAC18] hover:underline"
+        >
+           B2B Marketplace
+        </a>
             </p>
           </div>
         </div>
