@@ -21,13 +21,13 @@ const About = () => {
                 </span>
               </div>
 
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl leading-tight mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl leading-tight mb-6">
                 PM Billiards –
                 <br />
                 <span className="text-[#f5c243]">
                   Premium Pool Tables, Snooker Tables & Billiard Tables.
                 </span>
-              </h1>
+              </h2>
 
               <p className="text-white mb-10 text-sm sm:text-base lg:text-lg">
                 Welcome to PM Billiards, your trusted destination for premium

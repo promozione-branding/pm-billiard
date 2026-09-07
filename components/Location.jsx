@@ -8,9 +8,9 @@ const Location = () => {
   <div className="px-2 md:px-4">
     
   
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold py-3  text-center md:text-left">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold py-3  text-center md:text-left">
       Our Supply <span className="text-[#2f8f6b]">Network</span>
-    </h1>
+    </h2>
 
     
     <div className="flex flex-wrap  ">

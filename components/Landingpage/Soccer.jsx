@@ -88,13 +88,13 @@ const Soccer = () => {
             </div>
 
             {/* HEADING */}
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-5">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-5">
               PREMIUM CRAFTED
               <br />
               BILLIARDS, POOL & SNOOKER
               <br />
               TABLES FOR EVERY SPACE
-            </h1>
+            </h2>
 
             <div className="w-14 h-1 bg-white mb-5" />
 

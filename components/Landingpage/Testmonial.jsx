@@ -84,7 +84,7 @@ const testimonials = [
 
         {/* Rating Card */}
         <div className="lg:w-[320px] bg-white p-[10px_20px] text-center rounded-[4px]">
-          <h1 className="text-[80px] md:text-[110px] font-semibold leading-none">4.9</h1>
+          <h2 className="text-[80px] md:text-[110px] font-semibold leading-none">4.9</h2>
           <div className="text-[#ff4d4d] text-[24px] my-[10px]">★★★★★</div>
           <p className="text-[#555] text-xl">(300+ reviews)</p>
           <h3 className="mt-[20px] font-medium leading-snug">
