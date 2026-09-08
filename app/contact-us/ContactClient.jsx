@@ -22,6 +22,7 @@ const Contact = () => {
 
     try {
       const payload = {
+        supplierToken: "6a9fbb5cd936bdc2bb1d74d5",
         platform: "PM Billiards Snooker Tables Contact Form",
         platformEmail: "pmbilliards@gmail.com",
         name,
@@ -83,7 +84,7 @@ Contact: ${phone}`;
           </h1>
 
           <p className="mt-4 max-w-3xl mx-auto text-sm md:text-lg text-white/90">
-            Premium snooker, pool, and billiard tables crafted for professionals, 
+            Premium snooker, pool, and billiard tables crafted for professionals,
             clubs, and luxury homes. Let’s build your championship table.
           </p>
         </div>
@@ -117,24 +118,24 @@ Contact: ${phone}`;
                     className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   />
 
-               <select
-  name="products"
-  required
-  defaultValue=""
-  className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
->
-  <option value="" disabled>
-    Select Product
-  </option>
+                  <select
+                    name="products"
+                    required
+                    defaultValue=""
+                    className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
+                  >
+                    <option value="" disabled>
+                      Select Product
+                    </option>
 
-  {categories.map((cat) =>
-    cat.products?.map((prod) => (
-      <option key={prod.id} value={prod.name}>
-        {prod.name}
-      </option>
-    ))
-  )}
-</select>
+                    {categories.map((cat) =>
+                      cat.products?.map((prod) => (
+                        <option key={prod.id} value={prod.name}>
+                          {prod.name}
+                        </option>
+                      ))
+                    )}
+                  </select>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -152,7 +153,7 @@ Contact: ${phone}`;
                     required
                     maxLength={10}
                     minLength={10}
-               
+
                     placeholder="Phone Number"
                     className="p-3 rounded-lg bg-[#0B1511] border border-[#EDBC41]/30 text-white"
                   />
@@ -193,8 +194,8 @@ Contact: ${phone}`;
             </h3>
 
             <p className="text-white/90 mb-6">
-              PM Billiards specializes in tournament-grade snooker tables, 
-              precision-crafted with premium slate, professional cloth, and 
+              PM Billiards specializes in tournament-grade snooker tables,
+              precision-crafted with premium slate, professional cloth, and
               handcrafted wooden frames.
             </p>
 
@@ -202,7 +203,7 @@ Contact: ${phone}`;
               <div className="flex items-start gap-4">
                 <MapPin className="text-[#EDBC41] w-6 h-6" />
                 <p className="text-white/90">
-                16/3,Basement, Block 16, East Patel Nagar, Patel Nagar, <br /> New Delhi, 110008
+                  16/3,Basement, Block 16, East Patel Nagar, Patel Nagar, <br /> New Delhi, 110008
                 </p>
               </div>
 
@@ -217,7 +218,7 @@ Contact: ${phone}`;
               <div className="flex items-start gap-4">
                 <Mail className="text-[#EDBC41] w-6 h-6" />
                 <p className="text-white/90">
-                pmbilliards@gmail.com
+                  pmbilliards@gmail.com
                 </p>
               </div>
             </div>
@@ -226,7 +227,7 @@ Contact: ${phone}`;
 
         {/* GOOGLE MAP */}
         <div className="w-full h-[450px] mt-16">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.51500866488!2d77.16871070901136!3d28.64720967555514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04dcc1555555%3A0x89f48f2d3846a42c!2sPM%20BILLIARDS!5e1!3m2!1sen!2sin!4v1772109813343!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-full w-full"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.51500866488!2d77.16871070901136!3d28.64720967555514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04dcc1555555%3A0x89f48f2d3846a42c!2sPM%20BILLIARDS!5e1!3m2!1sen!2sin!4v1772109813343!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="h-full w-full"></iframe>
         </div>
       </section>
     </>

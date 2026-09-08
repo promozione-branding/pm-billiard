@@ -15,26 +15,26 @@ export default function ContactForm() {
   const [product, setProduct] = useState("");
   const [message, setMessage] = useState("");
 
-useEffect(() => {
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    const docHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
 
-    if (docHeight <= 0) return;
+      if (docHeight <= 0) return;
 
-    const scrollPercent = (scrollTop / docHeight) * 100;
+      const scrollPercent = (scrollTop / docHeight) * 100;
 
-    if (scrollPercent >= 20) {
-      setIsOpen(true);
-      window.removeEventListener("scroll", handleScroll); // open once
-    }
-  };
+      if (scrollPercent >= 20) {
+        setIsOpen(true);
+        window.removeEventListener("scroll", handleScroll); // open once
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   if (!isOpen) return null;
 
@@ -47,6 +47,7 @@ useEffect(() => {
 
     try {
       const formData = {
+        supplierToken: "6a9fbb5cd936bdc2bb1d74d5",
         platform: "pmbilliard Popup Form",
         platformEmail: "pmbilliards@gmail.com",
         name,
@@ -138,24 +139,24 @@ Contact: ${phone}`;
                 onChange={(e) => setName(e.target.value)}
                 disabled={loading}
               />
-                   <select
-            name="products"
-            required
-            defaultValue=""
-            className="p-3 rounded-lg bg-white border border-[#EDBC41]/30 text-black"
-          >
-            <option value="" disabled>
-              Select Product
-            </option>
-          
-            {categories.map((cat) =>
-              cat.products?.map((prod) => (
-                <option key={prod.id} value={prod.name}>
-                  {prod.name}
+              <select
+                name="products"
+                required
+                defaultValue=""
+                className="p-3 rounded-lg bg-white border border-[#EDBC41]/30 text-black"
+              >
+                <option value="" disabled>
+                  Select Product
                 </option>
-              ))
-            )}
-          </select>
+
+                {categories.map((cat) =>
+                  cat.products?.map((prod) => (
+                    <option key={prod.id} value={prod.name}>
+                      {prod.name}
+                    </option>
+                  ))
+                )}
+              </select>
             </div>
 
             <input
@@ -199,9 +200,8 @@ Contact: ${phone}`;
             </button>
 
             {status && (
-              <p className={`text-center text-sm mt-2 font-medium ${
-                status.startsWith("✅") ? "text-green-600" : "text-red-600"
-              }`}>
+              <p className={`text-center text-sm mt-2 font-medium ${status.startsWith("✅") ? "text-green-600" : "text-red-600"
+                }`}>
                 {status}
               </p>
             )}
