@@ -15,6 +15,7 @@ import Clientele from "@/components/Landingpage/Clientele";
 import Faq from "@/components/Landingpage/Faq";
 import BestSeller from "@/components/Landingpage/Bestseller";
 import Location from "@/components/Location";
+import CTA2 from "@/components/Landingpage/CTA2";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
 <TestimonialsSection></TestimonialsSection>
       <Faq></Faq>
       <Location></Location>
+      <CTA2/>
     </>
   );
 }
