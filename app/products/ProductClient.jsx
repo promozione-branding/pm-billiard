@@ -32,7 +32,7 @@ const Page = () => {
       {/* ================= HERO ================= */}
       <div
         className="relative h-[45vh] md:h-[95vh] flex items-center justify-center text-center"
-        style={{
+        style={{ 
           backgroundImage:
             "url('/pm Billards Product/luxuryTable_.webp')",
           backgroundSize: "cover",
