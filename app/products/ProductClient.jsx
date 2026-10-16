@@ -38,7 +38,7 @@ const Page = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      >
+      > 
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-10 text-white max-w-3xl px-4">
