@@ -16,7 +16,7 @@ const categories = [
   },
   {
     title: "Snooker Table",
-    icon: "/cat-tablee.png",
+    icon: "/cat-tablee.jpeg",
     link: "/categories/snooker-table",
   },
   {
@@ -60,7 +60,6 @@ export default function CategorySection() {
         </p>
       </div>
 
-      {/* ================= MOBILE SLIDER ================= */}
       <div className="block md:hidden px-3">
         <Swiper
           spaceBetween={12}

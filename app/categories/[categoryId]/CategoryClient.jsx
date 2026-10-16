@@ -16,7 +16,7 @@ export default function CategoryPage({ params }) {
     <>
       {/* ===== HERO BANNER ===== */}
       <div className="relative h-[45vh] md:h-[90vh] flex items-center justify-center text-center bg-cover overflow-hidden"
-        style={{ backgroundImage: "url('/pm Billards Product/luxuryTable.webp')" }}
+        style={{ backgroundImage: "url('/pm Billards Product/luxuryTable_.webp')" }}
       >
         <div className="absolute inset-0 bg-black/40" />
 

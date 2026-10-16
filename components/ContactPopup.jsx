@@ -20,7 +20,7 @@ export default function ContactPopup({ isOpen, onClose }) {
         {/* 🖼 Image */}
         <div className="hidden md:block w-full md:w-1/2 relative min-h-[300px]">
           <Image
-            src="/try/temp.webp"
+            src="/try/temp_.webp"
             alt="Contact Us"
             fill
             className="object-cover"

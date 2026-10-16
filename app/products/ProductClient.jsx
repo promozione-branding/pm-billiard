@@ -34,7 +34,7 @@ const Page = () => {
         className="relative h-[45vh] md:h-[95vh] flex items-center justify-center text-center"
         style={{
           backgroundImage:
-            "url('/pm Billards Product/luxuryTable.webp')",
+            "url('/pm Billards Product/luxuryTable_.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

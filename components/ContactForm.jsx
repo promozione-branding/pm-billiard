@@ -128,7 +128,7 @@ Contact: ${phone}`;
         {/* LEFT IMAGE */}
         <div className="relative hidden min-h-[550px] w-1/2 md:block">
           <Image
-            src="/try/temp.webp"
+            src="/try/temp_.webp"
             alt="Contact Us"
             fill
             className="object-cover"
