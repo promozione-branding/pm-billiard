@@ -11,17 +11,16 @@ const Whychoose = () => {
 
   const images = [
     "/clients/15.png",
-
-    "/new/1.webp",
-    "/new/2.webp",
-    "/new/3.webp",
+    "/new/1_.webp",
+    "/new/2_.webp",
+    "/new/3_.webp",
     "/new/4.webp",
     "/new/5.webp",
     "/new/6.webp",
     "/new/7.webp",
     "/new/8.webp",
-    "/new/9.jpeg",
-    "/new/10.webp",
+    "/new/9_.webp",
+    "/new/10_.webp",
     "/new/11.jpeg",
 
     

@@ -22,7 +22,7 @@ const bestSellers = [
   {
     id: 3,
     name: "Luxury Billiards Table",
-    img: "/pm Billards Product/3.webp",
+    img: "/pm Billards Product/3_org.webp",
     link: "/categories/snooker-table",
   },
   {
@@ -34,13 +34,13 @@ const bestSellers = [
   {
     id: 4,
     name: "Tournament Snooker Table",
-    img: "/try/try7.jpg",
+    img: "/pm Billards Product/try7_org.webp",
     link: "/categories/snooker-table",
   },
   {
     id: 5,
     name: "Classic Snooker Table",
-    img: "/try/unnamed2.png",
+    img: "/pm Billards Product/unnamed_2.webp",
     link: "/categories/snooker-table",
   },
 ];
