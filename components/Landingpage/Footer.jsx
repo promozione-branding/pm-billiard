@@ -115,6 +115,11 @@ style={{
                   Contact Us
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap" className="text-white hover:text-[#EDBC41]">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
 
