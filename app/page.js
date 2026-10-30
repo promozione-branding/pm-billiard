@@ -16,6 +16,7 @@ import Faq from "@/components/Landingpage/Faq";
 import BestSeller from "@/components/Landingpage/Bestseller";
 import Location from "@/components/Location";
 import CTA2 from "@/components/Landingpage/CTA2";
+import SnookerShowcase from "@/components/Landingpage/SnookerShowcase";
 
 export default function Home() {
   return (
@@ -23,22 +24,23 @@ export default function Home() {
       <Popup></Popup>
       <Hero></Hero>
       <ProductCategorySection></ProductCategorySection>
-<BestSeller></BestSeller>
+      <BestSeller></BestSeller>
       <AboutUs></AboutUs>
-          <Letter></Letter>
+      <Letter></Letter>
+      <SnookerShowcase></SnookerShowcase>
+      <Clientele></Clientele>
       <Products></Products>
       <Soccer></Soccer>
-      <Clientele></Clientele>
 
       <Whychoose></Whychoose>
-  
 
-  
+
+
       <PremiumTablesSection></PremiumTablesSection>
-<TestimonialsSection></TestimonialsSection>
+      <TestimonialsSection></TestimonialsSection>
       <Faq></Faq>
       <Location></Location>
-      <CTA2/>
+      <CTA2 />
     </>
   );
 }

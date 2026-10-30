@@ -115,7 +115,7 @@ Contact: ${phone}`;
 
         <div className="hidden md:block w-full md:w-1/2 h-64 md:h-auto relative">
           <Image
-            src="/try/temp_.webp"
+            src="/popup.webp"
             alt="Contact Us"
             fill
             className="object-cover w-full h-full"

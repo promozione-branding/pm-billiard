@@ -20,7 +20,7 @@ const Whychoose = () => {
     "/new/7.webp",
     "/new/8.webp",
     "/new/9_.webp",
-    "/new/10_.webp",
+    "/snooker/5.webp",
     "/new/11.jpeg",
 
     

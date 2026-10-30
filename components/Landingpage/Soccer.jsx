@@ -61,13 +61,13 @@ const Soccer = () => {
         {/* BG */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/try/try2.jpg')" }}
+          style={{ backgroundImage: "url('/parllex.webp')" }}
         />
 
         <div className="absolute inset-0 bg-black/20" />
 
         {/* GLASS PANEL */}
-        <div className="relative w-full lg:w-1/2 h-full backdrop-blur-md bg-[#008065]/45 text-white px-5 sm:px-10 lg:px-16 py-12 lg:py-25 flex flex-col justify-center">
+        <div className="relative w-full lg:w-1/2 h-full backdrop-blur-md bg-[#c4a288]/45 text-white px-5 sm:px-10 lg:px-16 py-12 lg:py-25 flex flex-col justify-center">
           <div className="max-w-2xl mx-auto lg:mx-0">
             {/* ICONS */}
             <div className="flex  gap-6 sm:gap-10 mb-8">
@@ -85,7 +85,7 @@ const Soccer = () => {
                   </p>
                 </div>
               ))}
-            </div>
+            </div>zQ
 
             {/* HEADING */}
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-5">
@@ -122,7 +122,7 @@ const Soccer = () => {
       {/* ================= SECOND SECTION ================= */}
 
       <section
-        style={{ backgroundImage: "url(/try/manu.png)" }}
+        style={{ backgroundImage: "url(/newbg.webp)" }}
         className="hidden md:block bg-center bg-cover h-[40vh] sm:h-[55vh] lg:bg-fixed"
       />
     </>

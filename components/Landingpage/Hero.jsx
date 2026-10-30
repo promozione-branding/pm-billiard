@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const desktopImages = ["/bannerHome (1).webp", "/hero1.png"];
+const desktopImages = ["/hero32.webp","/bannerHome (1).webp"];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
