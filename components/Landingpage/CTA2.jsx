@@ -1,12 +1,14 @@
+"use client"
 import React from "react";
 import { Phone, MessageCircle, ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { handleCallClick, handleWhatsappClick } from "@/track";
 
 export default function CTA2() {
   return (
     <section className="px-4 py-6 md:py-10 sm:px-6 lg:px-8">
       <div className="relative mx-auto max-w-7xl overflow-hidden py-6 rounded-3xl border border-[#b99a3b]/40 bg-[#123c2d] px-5  shadow-[0_15px_50px_rgba(18,60,45,0.18)] sm:px-10 sm:py-12">
-        
+
         {/* Decorative Background */}
         <div className="pointer-events-none absolute -left-20 -top-20 h-56 w-56 rounded-full bg-[#d4af37]/10 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 -right-20 h-64 w-64 rounded-full bg-[#d4af37]/10 blur-3xl" />
@@ -17,7 +19,7 @@ export default function CTA2() {
 
         {/* Content */}
         <div className="relative z-10 mx-auto max-w-3xl text-center">
-          
+
           {/* Small Heading */}
           <div className="mb-5 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[#d4af37]" />
@@ -30,11 +32,11 @@ export default function CTA2() {
           </div>
 
           {/* Main Heading */}
-      <h2 className="flex flex-col md:flex-row items-center justify-center gap-1 whitespace-nowrap text-center text-3xl font-semibold leading-tight text-[#fffdf5] xs:text-2xl sm:gap-2 sm:text-4xl md:text-5xl lg:text-6xl">
-  <span>Ready to Upgrade</span>
-  
-  <span className="text-[#d4af37]">Your Game Room?</span>
-</h2>
+          <h2 className="flex flex-col md:flex-row items-center justify-center gap-1 whitespace-nowrap text-center text-3xl font-semibold leading-tight text-[#fffdf5] xs:text-2xl sm:gap-2 sm:text-4xl md:text-5xl lg:text-6xl">
+            <span>Ready to Upgrade</span>
+
+            <span className="text-[#d4af37]">Your Game Room?</span>
+          </h2>
 
           {/* Description */}
           {/* <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#d9e3dc] sm:text-base">
@@ -45,10 +47,11 @@ export default function CTA2() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            
+
             {/* Call Button */}
             <a
-               href="tel:+918745076259"
+              onClick={() => handleCallClick({ source: "Website CTA", })}
+              href="tel:+918745076259"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#d4af37] bg-transparent px-7 py-3.5 text-sm font-semibold text-[#fffdf5] transition-all duration-300 hover:bg-[#d4af37] hover:text-[#123c2d] sm:w-auto"
             >
               <Phone
@@ -67,6 +70,7 @@ export default function CTA2() {
 
             {/* WhatsApp Button */}
             <a
+              onClick={() => handleWhatsappClick({ source: "Website CTA", })}
               href="https://wa.me/+918745076259"
               target="_blank"
               rel="noopener noreferrer"

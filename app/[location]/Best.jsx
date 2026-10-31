@@ -6,6 +6,7 @@ import Image from "next/image";
 import "swiper/css";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import { handleWhatsappClick } from "@/track";
 
 const bestSellers = [
   {
@@ -110,6 +111,7 @@ function PremiumShowcase({ item }) {
           <h3 className="text-white text-2xl font-semibold">{item.name}</h3>
 
           <a
+          onClick={() => handleWhatsappClick({ source: "Website City Pg", obj:item.name })}
             href={`https://wa.me/9999402424?text=${encodeURIComponent(
               `Hi, I want to enquire about ${item.name}`,
             )}`}

@@ -59,7 +59,7 @@ const SnookerShowcase = () => {
                 </p>
 
                 <a
-                  href="/products/snooker-tables"
+                  href="/categories/snooker-table"
                   className="inline-flex items-center gap-4 mt-7 px-6 py-3.5 rounded-full bg-[#e6bd68] text-[#17130a] text-sm font-semibold hover:bg-white transition-all duration-300"
                 >
                   Explore Snooker Tables

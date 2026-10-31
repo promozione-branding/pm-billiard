@@ -5,6 +5,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { ArrowUpRight, Shield, Droplet, Dumbbell, Recycle } from "lucide-react";
 import { motion } from "framer-motion";
+import { handleCallClick, handleWhatsappClick } from "@/track";
 
 
 export default function ProductPage({ params }) {
@@ -130,7 +131,7 @@ ${selectedColor?.name === color.name ? "text-yellow-500" : "text-gray-400 group-
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10 md:mt-14">
         
-<a href="tel:+918745076259
+<a onClick={() => handleCallClick({ source: "Website Product pg", obj: product.name})} href="tel:+918745076259
 
 ">
 <motion.button
@@ -152,6 +153,7 @@ ${selectedColor?.name === color.name ? "text-yellow-500" : "text-gray-400 group-
 </a>
        
               <motion.a
+              onClick={() => handleWhatsappClick({ source: "Website Product pg", obj: product.name })}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.96 }}
                 href={`https://wa.me/+918745076259?text=Hello, I am interested in ${encodeURIComponent(product.name)}`}
